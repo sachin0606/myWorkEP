@@ -1,0 +1,3 @@
+Nit,Ts,Program,EventName,StartTime,EndTime,ShortRemark,LongRemark
+Network1,TS1,Channel1,Morning News,2026-09-08 08:00:00,2026-09-08 08:30:00,News,Morning bulletin
+Network1,TS1,Channel1,Movie Night,2026-09-08 20:00:00,2026-09-08 22:00:00,Movie,Feature film

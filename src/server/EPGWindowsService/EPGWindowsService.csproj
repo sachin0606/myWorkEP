@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>EPGWindowsService</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net40</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>5</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="DXTool">
+      <HintPath>..\..\..\original\EPG-Service\DXTool.dll</HintPath>
+    </Reference>
+    <Reference Include="CryptManage">
+      <HintPath>..\..\..\original\EPG-Service\CryptManage.dll</HintPath>
+    </Reference>
+    <Reference Include="EPGTools">
+      <HintPath>..\..\..\original\EPG-Service\EPGTools.dll</HintPath>
+    </Reference>
+    <Reference Include="EPGServiceBLL">
+      <HintPath>..\..\..\original\EPG-Service\EPGServiceBLL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

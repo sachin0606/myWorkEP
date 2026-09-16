@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="SysFuncSendOrNot" xml:space="preserve"><value>发送与不发送控制</value></data>
+  <data name="ReadingEITFile" xml:space="preserve"><value>正在读取事件文件{0}</value></data>
+  <data name="SysFuncResetPassword" xml:space="preserve"><value>重置密码</value></data>
+  <data name="DealNoticeCompleted" xml:space="preserve"><value>完成对客户端更新通知的分析和处理</value></data>
+  <data name="NoticeSendedCount" xml:space="preserve"><value>操作成功,共下发通知信息条数：</value></data>
+  <data name="SureIsNull" xml:space="preserve"><value>为空？</value></data>
+  <data name="IsNotNull" xml:space="preserve"><value>不能为空</value></data>
+  <data name="DBNotExists" xml:space="preserve"><value>将升级的数据库是否存在</value></data>
+  <data name="ADDRESS_ERROR" xml:space="preserve"><value>邮件地址长度超过最大值</value></data>
+  <data name="SysFuncDescriptorType" xml:space="preserve"><value>描述符类型</value></data>
+  <data name="SysFuncUSERGROUP" xml:space="preserve"><value>用户组管理</value></data>
+  <data name="AccountIsNull" xml:space="preserve"><value>账号为空！</value></data>
+  <data name="Export" xml:space="preserve"><value>导出</value></data>
+  <data name="SysFuncNETWORK" xml:space="preserve"><value>网络管理</value></data>
+  <data name="BOTotalMoney" xml:space="preserve"><value>合计费用</value></data>
+  <data name="ByAddress" xml:space="preserve"><value>按地址寻址</value></data>
+  <data name="ResetPassword" xml:space="preserve"><value>重置密码</value></data>
+  <data name="CannotBeLessThanMin" xml:space="preserve"><value>不能小于最小值</value></data>
+  <data name="UserDefined" xml:space="preserve"><value>用户定义</value></data>
+  <data name="AUTH_TIME_ERROR" xml:space="preserve"><value>授权开始时间&gt;=结束时间或者当前时间&gt;=结束时间</value></data>
+  <data name="DeXinElectron" xml:space="preserve"><value>数字科技</value></data>
+  <data name="IsOpenLog" xml:space="preserve"><value>是否打开日志，获取更多详情？</value></data>
+  <data name="ImportTSFile" xml:space="preserve"><value>导入TS文件数据</value></data>
+  <data name="Fourth" xml:space="preserve"><value>第四个</value></data>
+  <data name="Forbid" xml:space="preserve"><value>禁用</value></data>
+  <data name="Friday" xml:space="preserve"><value>星期五</value></data>
+  <data name="TaskSuspend" xml:space="preserve"><value>任务即将暂停</value></data>
+  <data name="ServiceStopOK" xml:space="preserve"><value>服务停止成功</value></data>
+  <data name="Tuesday" xml:space="preserve"><value>星期二</value></data>
+  <data name="ServiceStartOK" xml:space="preserve"><value>服务启动成功</value></data>
+  <data name="Minute" xml:space="preserve"><value>分钟</value></data>
+  <data name="Monday" xml:space="preserve"><value>星期一</value></data>
+  <data name="yyyyMMdd" xml:space="preserve"><value>年-月-日</value></data>
+  <data name="Bigger" xml:space="preserve"><value>大于</value></data>
+  <data name="ALLCARD_CONDITION_AUTH_SAMEEXIST" xml:space="preserve"><value>条件授权和所有卡授权不能同时存在</value></data>
+  <data name="LoginFirst" xml:space="preserve"><value>请先登录！</value></data>
+  <data name="SelectOneOrMoreProgram" xml:space="preserve"><value>请选择一个或一个以上节目</value></data>
+  <data name="InputFormatError" xml:space="preserve"><value>输入格式错误</value></data>
+  <data name="Thursday" xml:space="preserve"><value>星期四</value></data>
+  <data name="csmDelete" xml:space="preserve"><value>移除</value></data>
+  <data name="LoginAgain" xml:space="preserve"><value>请重新登录！</value></data>
+  <data name="ImportingEventofProgram" xml:space="preserve"><value>正在导入节目{0}的事件{1}...</value></data>
+  <data name="LoginSuccessfully" xml:space="preserve"><value>登录成功！</value></data>
+  <data name="LogOutCondition" xml:space="preserve"><value>IC卡已经注销</value></data>
+  <data name="CannotEditPermitOfAdmin" xml:space="preserve"><value>不能修改“Admin”所在组的权限!</value></data>
+  <data name="Setting" xml:space="preserve"><value>设置</value></data>
+  <data name="SexMale" xml:space="preserve"><value>男</value></data>
+  <data name="ModifyCAConfig" xml:space="preserve"><value>修改CA配置</value></data>
+  <data name="CurrentUser" xml:space="preserve"><value>当前用户：</value></data>
+  <data name="BulkAdd" xml:space="preserve"><value>批量新增</value></data>
+  <data name="NoAvailableContentDelete" xml:space="preserve"><value>没有要删除的内容</value></data>
+  <data name="ShowAdancedProperty" xml:space="preserve"><value>显示高级属性 &gt;&gt;</value></data>
+  <data name="BONotecase" xml:space="preserve"><value>电子钱包</value></data>
+  <data name="Authorized" xml:space="preserve"><value>已授权</value></data>
+  <data name="SelectOneOrMorePermit" xml:space="preserve"><value>请选择一个及以上权限</value></data>
+  <data name="SysFuncSendGenerator" xml:space="preserve"><value>发送数据生成</value></data>
+  <data name="FileNotExist" xml:space="preserve"><value>文件不存在</value></data>
+  <data name="SelectOneOrMoreRows" xml:space="preserve"><value>请从表格中选择一行或多行记录！</value></data>
+  <data name="CannotAddAnyMore" xml:space="preserve"><value>不能再新增了</value></data>
+  <data name="OffDay" xml:space="preserve"><value>休息日</value></data>
+  <data name="PIDRemappingError" xml:space="preserve"><value>PID重映射配置错误或者需要更多的重映射配置</value></data>
+  <data name="UserID" xml:space="preserve"><value>操作员编号</value></data>
+  <data name="SysFuncSendSpeedManagement" xml:space="preserve"><value>发送速度控制</value></data>
+  <data name="SysFucnSystemSetting" xml:space="preserve"><value>系统设置</value></data>
+  <data name="WarningDBExists" xml:space="preserve"><value>警告：该数据库已经存在，如果继续，则将删除此数据库及数据，请谨慎操作。是否继续？</value></data>
+  <data name="DeleteDataError" xml:space="preserve"><value>删除数据出错</value></data>
+  <data name="SysFuncProgramInfo" xml:space="preserve"><value>节目信息管理</value></data>
+  <data name="CannotDeleteSystemDefinedDescriptor" xml:space="preserve"><value>不能删除描述符为系统定义的记录</value></data>
+  <data name="ElementaryPIDExists" xml:space="preserve"><value>节目元素PID已经存在</value></data>
+  <data name="Smaller" xml:space="preserve"><value>小于</value></data>
+  <data name="MustBeUnique" xml:space="preserve"><value>必须唯一</value></data>
+  <data name="NotSend" xml:space="preserve"><value>不发送</value></data>
+  <data name="DeletingErrorEventProgram" xml:space="preserve"><value>正在删除节目{0}的错误事件...</value></data>
+  <data name="AdminCanResetPassword" xml:space="preserve"><value>只有admin才能重置密码！</value></data>
+  <data name="FailedToCheckSoftdog" xml:space="preserve"><value>检测加密狗失败！</value></data>
+  <data name="PlsCfgCountryCodeFirst" xml:space="preserve"><value>请先配置'country_code"(描述符管理-&gt;EIT分级设置)</value></data>
+  <data name="NotEqual" xml:space="preserve"><value>不等于</value></data>
+  <data name="BackupSucceed" xml:space="preserve"><value>备份成功!</value></data>
+  <data name="EditionPSI_SI" xml:space="preserve"><value>PSI/SI</value></data>
+  <data name="TimeLessThanLastLine" xml:space="preserve"><value>{0}中的{1}行时间小于上行时间，智能识别为次日事件</value></data>
+  <data name="LoginChangeOther" xml:space="preserve"><value>切换用户</value></data>
+  <data name="FontColorBlue" xml:space="preserve"><value>蓝色</value></data>
+  <data name="SelectedItemCount" xml:space="preserve"><value>已选择项数:</value></data>
+  <data name="ConfigurationIncorrect" xml:space="preserve"><value>配置不正确</value></data>
+  <data name="Sunday" xml:space="preserve"><value>星期天</value></data>
+  <data name="SysFuncTSInfo" xml:space="preserve"><value>传输流信息管理</value></data>
+  <data name="Second" xml:space="preserve"><value>第二个</value></data>
+  <data name="RestoreSucceed" xml:space="preserve"><value>还原成功!</value></data>
+  <data name="DatabaseConnectionException" xml:space="preserve"><value>数据库连接异常，请稍候再试！</value></data>
+  <data name="ValueInputExceedLimited" xml:space="preserve"><value>输入值超过最大限制</value></data>
+  <data name="ByUserGroup" xml:space="preserve"><value>按用户组寻址</value></data>
+  <data name="SmallerOrEqual" xml:space="preserve"><value>小于等于</value></data>
+  <data name="ImportCount" xml:space="preserve"><value>共导入事件数量：{0}；</value></data>
+  <data name="Program" xml:space="preserve"><value>节目</value></data>
+  <data name="ImportEvent" xml:space="preserve"><value>导入事件信息</value></data>
+  <data name="ImportError" xml:space="preserve"><value>导入出错</value></data>
+  <data name="AddCustomerTypeFirstly" xml:space="preserve"><value>请先填写客户类型信息!</value></data>
+  <data name="NetworkIDExists" xml:space="preserve"><value>网络编号已经存在</value></data>
+  <data name="CannotAddKeyRepeatly" xml:space="preserve"><value>不能重复添加键!</value></data>
+  <data name="MMddyyyy" xml:space="preserve"><value>月-日-年</value></data>
+  <data name="SavingEventProgram" xml:space="preserve"><value>正在保存节目{0}的事件...</value></data>
+  <data name="OperateSucceed" xml:space="preserve"><value>操作成功</value></data>
+  <data name="ComfirmExit" xml:space="preserve"><value>您确定要退出系统吗?</value></data>
+  <data name="Contain" xml:space="preserve"><value>包含</value></data>
+  <data name="FingerprintDescription" xml:space="preserve"><value>1代表启用指纹，0代表禁用指纹</value></data>
+  <data name="OperateDateTime" xml:space="preserve"><value>操作时间</value></data>
+  <data name="GroupContainUser" xml:space="preserve"><value>选择的某些组已经有操作员了，不能删除！</value></data>
+  <data name="SysFuncRedefinePID" xml:space="preserve"><value>PID重映射</value></data>
+  <data name="SysFuncLogManagement" xml:space="preserve"><value>日志管理</value></data>
+  <data name="HideAdancedProperty" xml:space="preserve"><value>隐藏高级属性&lt;&lt;</value></data>
+  <data name="SaveFailure" xml:space="preserve"><value>保存失败！</value></data>
+  <data name="AddingEventFileForProgram" xml:space="preserve"><value>正在为节目添加找到匹配的事件文件</value></data>
+  <data name="TSIDExists" xml:space="preserve"><value>TS编号已经存在</value></data>
+  <data name="ProgramRunningHere" xml:space="preserve"><value>程序将继续在这里运行</value></data>
+  <data name="SysFuncMultimediaManage" xml:space="preserve"><value>节目元素流管理</value></data>
+  <data name="tsbDelete" xml:space="preserve"><value>删除</value></data>
+  <data name="SoftOutOfDate" xml:space="preserve"><value>授权信息已过期，请购买软件后使用</value></data>
+  <data name="Wednesday" xml:space="preserve"><value>星期三</value></data>
+  <data name="tsbCancel" xml:space="preserve"><value>取消</value></data>
+  <data name="FileFormatNotLegal" xml:space="preserve"><value>文件格式不合格</value></data>
+  <data name="ConfirmSubmit" xml:space="preserve"><value>确定提交吗?</value></data>
+  <data name="SysFuncDBRestore" xml:space="preserve"><value>数据库恢复</value></data>
+  <data name="GroupForbid" xml:space="preserve"><value>该组已经被禁用</value></data>
+  <data name="AddOneOrMore" xml:space="preserve"><value>请添加一个或一个以上</value></data>
+  <data name="SysFuncBATManage" xml:space="preserve"><value>BAT管理</value></data>
+  <data name="MainForm" xml:space="preserve"><value>主界面</value></data>
+  <data name="Transfer" xml:space="preserve"><value>过户</value></data>
+  <data name="DeleteSucceed" xml:space="preserve"><value>删除成功！</value></data>
+  <data name="AllAddress" xml:space="preserve"><value>全部地址</value></data>
+  <data name="ModifyPWDFailure" xml:space="preserve"><value>修改密码失败！</value></data>
+  <data name="csmEdit" xml:space="preserve"><value>修改</value></data>
+  <data name="BackupFailure" xml:space="preserve"><value>备份失败!</value></data>
+  <data name="StartTimeSmallerThanCurrent" xml:space="preserve"><value>起始时间不能小于当前时间!</value></data>
+  <data name="OperatedCompletely" xml:space="preserve"><value>操作完成</value></data>
+  <data name="BOLogout" xml:space="preserve"><value>销户费用</value></data>
+  <data name="OriginalPWDIsWrong" xml:space="preserve"><value>原密码错误！</value></data>
+  <data name="tsbImport" xml:space="preserve"><value>导入</value></data>
+  <data name="PWDIsSame" xml:space="preserve"><value>新密码与原密码相同!</value></data>
+  <data name="ID" xml:space="preserve"><value>编号</value></data>
+  <data name="OR" xml:space="preserve"><value>或</value></data>
+  <data name="N2" xml:space="preserve"><value>两位小数</value></data>
+  <data name="N1" xml:space="preserve"><value>一位小数</value></data>
+  <data name="N0" xml:space="preserve"><value>整数</value></data>
+  <data name="CannotAddPermitOfAdmin" xml:space="preserve"><value>不能新增“Admin”所在组的权限!</value></data>
+  <data name="EditFailure" xml:space="preserve"><value>修改失败！</value></data>
+  <data name="TimeDurationOverlaps" xml:space="preserve"><value>时间段有重叠</value></data>
+  <data name="OperateFailure" xml:space="preserve"><value>操作失败</value></data>
+  <data name="CannotEditGroupOfAdmin" xml:space="preserve"><value>不能修改“Admin”所在组!</value></data>
+  <data name="SysFuncEITImport" xml:space="preserve"><value>EIT导入</value></data>
+  <data name="ByCardNumber" xml:space="preserve"><value>按卡号寻址</value></data>
+  <data name="OperateInSendingArea" xml:space="preserve"><value>请在发送控制区操作!</value></data>
+  <data name="ConfirmForbid" xml:space="preserve"><value>您确定要禁用这些数据吗?</value></data>
+  <data name="ReadDBError" xml:space="preserve"><value>读取数据出错</value></data>
+  <data name="RestoreFailure" xml:space="preserve"><value>还原失败!</value></data>
+  <data name="SelectDBWantBackupFirst" xml:space="preserve"><value>请选择要备份的数据库</value></data>
+  <data name="PutInPassword" xml:space="preserve"><value>请输入密码！</value></data>
+  <data name="DateInvalidInTheSecondTime" xml:space="preserve"><value>{0}中第二次出现日期顺序不符，无法智能识别的的行在：{1}行；已对该节目忽略导入</value></data>
+  <data name="ImportFinishedAndAllSucceed" xml:space="preserve"><value>导入任务完成，且全部成功；</value></data>
+  <data name="CannotParseDataSaving" xml:space="preserve"><value>无法解析即将保存的关联数据</value></data>
+  <data name="FindEventAndSelectProgram" xml:space="preserve"><value>搜索到以下节目的事件，请选择要导入的节目</value></data>
+  <data name="All" xml:space="preserve"><value>全部</value></data>
+  <data name="AND" xml:space="preserve"><value>且</value></data>
+  <data name="Day" xml:space="preserve"><value>天</value></data>
+  <data name="Min" xml:space="preserve"><value>最小化(&amp;N)</value></data>
+  <data name="Max" xml:space="preserve"><value>最大化/还原(&amp;X)</value></data>
+  <data name="tsbSubmit" xml:space="preserve"><value>提交</value></data>
+  <data name="DescriptorExceedsMaxLength" xml:space="preserve"><value>描述符超过最大长度!</value></data>
+  <data name="Equal" xml:space="preserve"><value>等于</value></data>
+  <data name="Event" xml:space="preserve"><value>事件</value></data>
+  <data name="SysFuncEITManage" xml:space="preserve"><value>节目事件信息管理</value></data>
+  <data name="About" xml:space="preserve"><value>关于</value></data>
+  <data name="First" xml:space="preserve"><value>第一个</value></data>
+  <data name="EPGServiceNotInstalledorDestroyed" xml:space="preserve"><value>服务未安装，或已损坏！请重新安装修复</value></data>
+  <data name="Month" xml:space="preserve"><value>月</value></data>
+  <data name="BOSTB" xml:space="preserve"><value>机顶盒费用</value></data>
+  <data name="Close" xml:space="preserve"><value>关闭(&amp;C)</value></data>
+  <data name="Other" xml:space="preserve"><value>其他</value></data>
+  <data name="Login" xml:space="preserve"><value>登录</value></data>
+  <data name="LogID" xml:space="preserve"><value>日志编号</value></data>
+  <data name="ConfirmNoSelectPreferential" xml:space="preserve"><value>您确定不选择优惠策略吗?</value></data>
+  <data name="Third" xml:space="preserve"><value>第三个</value></data>
+  <data name="ConfirmClearEGP" xml:space="preserve"><value>确定要清空EPG信息吗？</value></data>
+  <data name="FailedToListen" xml:space="preserve"><value>监听失败</value></data>
+  <data name="NoPermit" xml:space="preserve"><value>没有权限</value></data>
+  <data name="VersionLimited" xml:space="preserve"><value>试用版限制</value></data>
+  <data name="CannotRecognizeLine" xml:space="preserve"><value>{0}有不可识别的行在：{1}行</value></data>
+  <data name="NotContain" xml:space="preserve"><value>不包含</value></data>
+  <data name="UserName" xml:space="preserve"><value>操作员名称</value></data>
+  <data name="ConfirmDelete" xml:space="preserve"><value>确认删除吗？</value></data>
+  <data name="EventIDRepeat" xml:space="preserve"><value>事件编号重复</value></data>
+  <data name="PasswordIswrong" xml:space="preserve"><value>密码错误！</value></data>
+  <data name="ExportOpenConfirm" xml:space="preserve"><value>导出文件成功,是否现在打开它?</value></data>
+  <data name="HadTheSameName" xml:space="preserve"><value>已经有相同名称</value></data>
+  <data name="SelectFilePath" xml:space="preserve"><value>选择文件路径</value></data>
+  <data name="CannotDeletePermitOfAdmin" xml:space="preserve"><value>不能删除“Admin”所在组的权限!</value></data>
+  <data name="ImportEITIgnore" xml:space="preserve"><value>智能忽略了{0}共{1}行事件信息</value></data>
+  <data name="ModifyPWDSuccess" xml:space="preserve"><value>修改密码成功！</value></data>
+  <data name="ImportFinished" xml:space="preserve"><value>导入完成</value></data>
+  <data name="AccountIsNotExist" xml:space="preserve"><value>账号不存在！</value></data>
+  <data name="FontColorRed" xml:space="preserve"><value>红色</value></data>
+  <data name="CannotBeGreaterThanMax" xml:space="preserve"><value>不能大于最大值</value></data>
+  <data name="SysFuncPermitGroupManagemnent" xml:space="preserve"><value>权限组管理</value></data>
+  <data name="GroupHasSetPermit" xml:space="preserve"><value>选择的某些组已经设置了权限，不能删除！</value></data>
+  <data name="Version" xml:space="preserve"><value>版本</value></data>
+  <data name="PIDCannotRepeat" xml:space="preserve"><value>PID不能重复!</value></data>
+  <data name="USERINFO" xml:space="preserve"><value>用户信息管理</value></data>
+  <data name="ModifyDBConfig" xml:space="preserve"><value>修改数据库配置</value></data>
+  <data name="EventFileMatchingWasNotFound" xml:space="preserve"><value>没有找到匹配的事件文件</value></data>
+  <data name="UpgradeEPGFirst" xml:space="preserve"><value>请先升级EPG软件</value></data>
+  <data name="TrialVersion" xml:space="preserve"><value>试用版</value></data>
+  <data name="PWDIsNotSameWithConfirmPWD" xml:space="preserve"><value>新密码与确认新密码不一致!</value></data>
+  <data name="FontColorBlack" xml:space="preserve"><value>黑色</value></data>
+  <data name="FontColorGreen" xml:space="preserve"><value>绿色</value></data>
+  <data name="BiggerOrEqual" xml:space="preserve"><value>大于等于</value></data>
+  <data name="FontColorWhite" xml:space="preserve"><value>白色</value></data>
+  <data name="EndTimeSmallerThanCurrent" xml:space="preserve"><value>结束时间小于当前时间!</value></data>
+  <data name="DBConfigSucceeded" xml:space="preserve"><value>数据库配置成功！</value></data>
+  <data name="SysFuncDBBackup" xml:space="preserve"><value>数据库备份</value></data>
+  <data name="SysFuncAllFunctions" xml:space="preserve"><value>所有功能</value></data>
+  <data name="BOResume" xml:space="preserve"><value>报开费用</value></data>
+  <data name="tsbHelp" xml:space="preserve"><value>帮助</value></data>
+  <data name="tsbEdit" xml:space="preserve"><value>修改</value></data>
+  <data name="tsbStop" xml:space="preserve"><value>停止</value></data>
+  <data name="tsbSave" xml:space="preserve"><value>保存</value></data>
+  <data name="ProgramIDExist" xml:space="preserve"><value>节目编号已经存在</value></data>
+  <data name="CannotFindEvents" xml:space="preserve"><value>未找到任何节目的事件信息，请确认选定的目录下含有相关事件文件</value></data>
+  <data name="tsbDownloadTemplate" xml:space="preserve"><value>下载数据导入模板</value></data>
+  <data name="ddMMyyyy" xml:space="preserve"><value>日-月-年</value></data>
+  <data name="BOOrderProduct" xml:space="preserve"><value>订购产品</value></data>
+  <data name="ValueCannotBeNull" xml:space="preserve"><value>值不能为空</value></data>
+  <data name="BoughtProduct" xml:space="preserve"><value>该客户的新IC卡已经购买产品，不能更换此卡！</value></data>
+  <data name="SucceedToCloseConnection" xml:space="preserve"><value>关闭连接成功!</value></data>
+  <data name="ApplicationProcessError" xml:space="preserve"><value>程序处理出错</value></data>
+  <data name="WorkingDay" xml:space="preserve"><value>工作日</value></data>
+  <data name="Saturday" xml:space="preserve"><value>星期六</value></data>
+  <data name="OpenTSPlayerError" xml:space="preserve"><value>打开码流播放器错误</value></data>
+  <data name="NeedManuallyBackupBeforeUpgrade" xml:space="preserve"><value>强烈建议升级前手动备份数据库，是否需要手动备份？</value></data>
+  <data name="systitle" xml:space="preserve"><value>系统提示</value></data>
+  <data name="ImportFinishedAndSomeIgnored" xml:space="preserve"><value>导入任务完成，但部分被忽略！</value></data>
+  <data name="StartTimeSmallerThanEnd" xml:space="preserve"><value>结束时间不能小于开始时间!</value></data>
+  <data name="MemoryWarn" xml:space="preserve"><value>系统资源不足，已经为您释放部分资源。请检查服务器！</value></data>
+  <data name="SystemDefined" xml:space="preserve"><value>系统定义</value></data>
+  <data name="LastOne" xml:space="preserve"><value>最后一个</value></data>
+  <data name="BOBuild" xml:space="preserve"><value>初装费</value></data>
+  <data name="BOPause" xml:space="preserve"><value>报停费用</value></data>
+  <data name="Refresh" xml:space="preserve"><value>刷新</value></data>
+  <data name="CannotbePause" xml:space="preserve"><value>不能报停已经报停的客户!</value></data>
+  <data name="BOPayForProduct" xml:space="preserve"><value>产品续费</value></data>
+  <data name="NoAvailableEventIDInTheProgram" xml:space="preserve"><value>当前节目已经无可用的事件编号</value></data>
+  <data name="CanNotRemoveCondtion" xml:space="preserve"><value>不能再移除任何查询条件了！</value></data>
+  <data name="LoginFailureAndCheckNetworkConnection" xml:space="preserve"><value>登录失败,请检查网络连接再登录!</value></data>
+  <data name="CannotbeLogout" xml:space="preserve"><value>不能注销已经注销的客户!</value></data>
+  <data name="BackupPathNotExist" xml:space="preserve"><value>备份路径不存在</value></data>
+  <data name="Inconsistent" xml:space="preserve"><value>两次输入密码不一致</value></data>
+  <data name="BOBackProduct" xml:space="preserve"><value>退订产品</value></data>
+  <data name="CannotSelectRootDirectory" xml:space="preserve"><value>不能选择根目录</value></data>
+  <data name="LoginOutSuccessfully" xml:space="preserve"><value>退出成功！</value></data>
+  <data name="FindingEvent" xml:space="preserve"><value>正在搜索节目的事件文件:</value></data>
+  <data name="BATIDExists" xml:space="preserve"><value>BAT ID 已经存在</value></data>
+  <data name="SysFuncSingleIPOutput" xml:space="preserve"><value>单IP输出设置</value></data>
+  <data name="SelectDetail" xml:space="preserve"><value>请选择明细</value></data>
+  <data name="AUTHNUMBER_ERROR" xml:space="preserve"><value>授权个数过大，超过了最大上限</value></data>
+  <data name="BOTransfer" xml:space="preserve"><value>过户费用</value></data>
+  <data name="SaveDescriptorError" xml:space="preserve"><value>保存描述符出错</value></data>
+  <data name="CannotProcessEventFilesFound" xml:space="preserve"><value>无法处理找到的多个匹配的事件文件</value></data>
+  <data name="SendPointNotSet" xml:space="preserve"><value>发送出口地址和端口未设置</value></data>
+  <data name="BOIC_CARD" xml:space="preserve"><value>IC卡费用</value></data>
+  <data name="SaveDataError" xml:space="preserve"><value>保存数据出错</value></data>
+  <data name="DeleteFailure" xml:space="preserve"><value>删除失败！</value></data>
+  <data name="DBNeednotUpgrade" xml:space="preserve"><value>数据库已经是最新的，无需升级！</value></data>
+  <data name="LoinInSucceed" xml:space="preserve"><value>登录成功！</value></data>
+  <data name="ModifySMSDBConfig" xml:space="preserve"><value>修改SMS数据库配置</value></data>
+  <data name="tsbAdd" xml:space="preserve"><value>新增</value></data>
+  <data name="CannotAddRepeatly" xml:space="preserve"><value>不能重复添加!</value></data>
+  <data name="SucceedToCreatConnection" xml:space="preserve"><value>创建连接成功!</value></data>
+  <data name="CannotStartupMultiClient" xml:space="preserve"><value>不能在同一台计算机上同时运行多个客户端!</value></data>
+  <data name="SexFemale" xml:space="preserve"><value>女</value></data>
+  <data name="OperateSucceedNow" xml:space="preserve"><value>设置已经生效，不需要重启服务</value></data>
+  <data name="SysFuncMultipleIPOutput" xml:space="preserve"><value>多IP输出设置</value></data>
+  <data name="tsbClose" xml:space="preserve"><value>关闭</value></data>
+  <data name="DBConfigFailed" xml:space="preserve"><value>数据库配置失败！</value></data>
+  <data name="tsbPrint" xml:space="preserve"><value>打印</value></data>
+  <data name="NoAvailableProgram" xml:space="preserve"><value>没有可用的节目</value></data>
+  <data name="SelectLocalDirectory" xml:space="preserve"><value>请选择本地路径。</value></data>
+  <data name="EditionEPG" xml:space="preserve"><value>EPG</value></data>
+  <data name="LoginOut" xml:space="preserve"><value>退出</value></data>
+  <data name="tsbQuery" xml:space="preserve"><value>查询</value></data>
+  <data name="ConnectToSQLServer" xml:space="preserve"><value>连接到数据库服务器：</value></data>
+  <data name="EventFileFirstLineFormatError" xml:space="preserve"><value>事件文件首行格式有误</value></data>
+  <data name="SysFuncPMTPIDReMapping" xml:space="preserve"><value>PMT PID重映射</value></data>
+  <data name="SettingError" xml:space="preserve"><value>设置错误</value></data>
+  <data name="ReceivedNotice" xml:space="preserve"><value>收到来自客户端的更新通知</value></data>
+  <data name="UpgradeDBFirst" xml:space="preserve"><value>请先使用DB Tool升级数据库</value></data>
+  <data name="SysFuncUSERINFO" xml:space="preserve"><value>用户管理</value></data>
+  <data name="EditSucceed" xml:space="preserve"><value>修改成功！</value></data>
+  <data name="EventFileFormatError" xml:space="preserve"><value>事件文件格式有误</value></data>
+  <data name="ReadDataError" xml:space="preserve"><value>读取数据出错</value></data>
+  <data name="SaveSucceed" xml:space="preserve"><value>保存成功！</value></data>
+  <data name="CanNotAddCondtion" xml:space="preserve"><value>不能再添加任何查询条件了！</value></data>
+  <data name="TaskResume" xml:space="preserve"><value>任务即将恢复</value></data>
+  <data name="OperateSucceedAfterServiceRestar" xml:space="preserve"><value>设置将在重启服务后才会生效</value></data>
+  <data name="Auto" xml:space="preserve"><value>自动</value></data>
+  <data name="Name" xml:space="preserve"><value>名称</value></data>
+  <data name="Hour" xml:space="preserve"><value>小时</value></data>
+  <data name="Send" xml:space="preserve"><value>发送</value></data>
+  <data name="Year" xml:space="preserve"><value>年</value></data>
+  <data name="PutInAccount" xml:space="preserve"><value>请输入账号！</value></data>
+  <data name="AccreditDes" xml:space="preserve"><value>当前授权为试用版，可使用日期到{0}</value></data>
+  <data name="UpdateSendingData" xml:space="preserve"><value>更新下发数据</value></data>
+  <data name="LookOver" xml:space="preserve"><value>查看</value></data>
+  </root>

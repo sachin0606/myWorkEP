@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>EPGBLL</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>5</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="EPGDALFactory">
+      <HintPath>..\..\..\original\EPG-Service\EPGDALFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="EPGModel">
+      <HintPath>..\..\..\original\EPG-Service\EPGModel.dll</HintPath>
+    </Reference>
+    <Reference Include="EPGTools">
+      <HintPath>..\..\..\original\EPG-Service\EPGTools.dll</HintPath>
+    </Reference>
+    <Reference Include="DXTool">
+      <HintPath>..\..\..\original\EPG-Service\DXTool.dll</HintPath>
+    </Reference>
+    <Reference Include="EPGIDAL">
+      <HintPath>..\..\..\original\EPG-Service\EPGIDAL.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="EPGResource">
+      <HintPath>..\..\..\original\EPG-Service\EPGResource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="EPGSoftDog">
+      <HintPath>..\..\..\original\EPG-Service\EPGSoftDog.dll</HintPath>
+    </Reference>
+    <Reference Include="Dexin.Util.Common">
+      <HintPath>..\..\..\original\EPG-Service\Dexin.Util.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+</Project>

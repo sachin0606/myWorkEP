@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>EPGModel</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>5</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="EPGTools">
+      <HintPath>..\..\..\original\EPG-Service\EPGTools.dll</HintPath>
+    </Reference>
+    <Reference Include="DXTool">
+      <HintPath>..\..\..\original\EPG-Service\DXTool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="EPGResource">
+      <HintPath>..\..\..\original\EPG-Service\EPGResource.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

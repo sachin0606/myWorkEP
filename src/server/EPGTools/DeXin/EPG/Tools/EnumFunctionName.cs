@@ -1,0 +1,30 @@
+namespace DeXin.EPG.Tools
+{
+	public enum EnumFunctionName
+	{
+		SysFuncAllFunctions,
+		SysFuncNETWORK,
+		SysFuncUSERINFO,
+		SysFuncDescriptorType,
+		SysFuncUSERGROUP,
+		SysFuncPermitGroupManagemnent,
+		SysFuncProgramInfo,
+		SysFuncTSInfo,
+		SysFuncSendSpeedManagement,
+		SysFuncRedefinePID,
+		SysFucnSystemSetting,
+		SysFuncDBBackup,
+		SysFuncDBRestore,
+		SysFuncSingleIPOutput,
+		SysFuncMultipleIPOutput,
+		SysFuncPMTPIDReMapping,
+		SysFuncBATManage,
+		SysFuncEITManage,
+		SysFuncSendOrNot,
+		SysFuncMultimediaManage,
+		SysFuncSendGenerator,
+		SysFuncLogManagement,
+		SysFuncResetPassword,
+		SysFuncEITImport
+	}
+}

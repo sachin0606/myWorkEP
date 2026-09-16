@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="lastEditTimeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve"><value>最后修改时间</value></data>
+  <data name="&gt;&gt;canQueryDataGridViewCheckBoxColumn.Name" xml:space="preserve"><value>canQueryDataGridViewCheckBoxColumn</value></data>
+  <data name="&gt;&gt;canQueryDataGridViewCheckBoxColumn.Type" xml:space="preserve"><value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
+  <data name="&gt;&gt;canEditDataGridViewCheckBoxColumn.Type" xml:space="preserve"><value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
+  <data name="&gt;&gt;canEditDataGridViewCheckBoxColumn.Name" xml:space="preserve"><value>canEditDataGridViewCheckBoxColumn</value></data>
+  <data name="canAddDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve"><value>新增</value></data>
+  <data name="pnlBase.Text" xml:space="preserve"><value>所有功能</value></data>
+  <data name="pnlBase.Size" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBD
+dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0
+ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAMUCAACoAQAACw==</value></data><data name="&gt;&gt;pnlBase.ZOrder" xml:space="preserve"><value>0</value></data>
+  <data name="tsmSelectAll.Text" xml:space="preserve"><value>全部选中</value></data>
+  <data name="tsmSelectAll.Size" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBD
+dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0
+ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAJgAAAAWAAAACw==</value></data><data name="&gt;&gt;canAddDataGridViewCheckBoxColumn.Name" xml:space="preserve"><value>canAddDataGridViewCheckBoxColumn</value></data>
+  <data name="&gt;&gt;canAddDataGridViewCheckBoxColumn.Type" xml:space="preserve"><value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
+  <data name="tsmDeselectAll.Size" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBD
+dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0
+ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAJgAAAAWAAAACw==</value></data><data name="tsmDeselectAll.Text" xml:space="preserve"><value>全部取消</value></data>
+  <data name="&gt;&gt;creatorDataGridViewTextBoxColumn.Name" xml:space="preserve"><value>creatorDataGridViewTextBoxColumn</value></data>
+  <data name="&gt;&gt;creatorDataGridViewTextBoxColumn.Type" xml:space="preserve"><value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
+  <data name="$this.Text" xml:space="preserve"><value>权限管理</value></data>
+  <data name="canPrintDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve"><value>打印</value></data>
+  <data name="&gt;&gt;lastEditorDataGridViewTextBoxColumn.Type" xml:space="preserve"><value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
+  <data name="&gt;&gt;lastEditorDataGridViewTextBoxColumn.Name" xml:space="preserve"><value>lastEditorDataGridViewTextBoxColumn</value></data>
+  <data name="&gt;&gt;SelectCK.Name" xml:space="preserve"><value>SelectCK</value></data>
+  <data name="&gt;&gt;SelectCK.Type" xml:space="preserve"><value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
+  <data name="cmsSelect.Size" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBD
+dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0
+ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAHcAAAAwAAAACw==</value></data><data name="&gt;&gt;pnlBase.Parent" xml:space="preserve"><value>$this</value></data>
+  <data name="&gt;&gt;GroupNameDataGridViewTextBoxColumn.Name" xml:space="preserve"><value>GroupNameDataGridViewTextBoxColumn</value></data>
+  <data name="&gt;&gt;GroupNameDataGridViewTextBoxColumn.Type" xml:space="preserve"><value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
+  <data name="&gt;&gt;tsmSelectAll.Name" xml:space="preserve"><value>tsmSelectAll</value></data>
+  <data name="&gt;&gt;tsmSelectAll.Type" xml:space="preserve"><value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
+  <data name="$this.ClientSize" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBD
+dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0
+ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAMUCAADBAQAACw==</value></data><data name="&gt;&gt;dgvPermitGroup.Type" xml:space="preserve"><value>Com.Cn.Tool.UserControls.DGV, DeXinTool, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value></data>
+  <data name="&gt;&gt;dgvPermitGroup.Name" xml:space="preserve"><value>dgvPermitGroup</value></data>
+  <data name="functionIDDataGridViewTextBoxColumn.HeaderText" xml:space="preserve"><value>功能编号</value></data>
+  <data name="creatorDataGridViewTextBoxColumn.HeaderText" xml:space="preserve"><value>创建人</value></data>
+  <data name="GroupNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve"><value>组名称</value></data>
+  <data name="canEditDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve"><value>修改</value></data>
+  <data name="SelectCK.HeaderText" xml:space="preserve"><value>选择</value></data>
+  <data name="&gt;&gt;dgvPermitGroup.Parent" xml:space="preserve"><value>pnlBase</value></data>
+  <data name="&gt;&gt;dgvPermitGroup.ZOrder" xml:space="preserve"><value>0</value></data>
+  <data name="&gt;&gt;lastEditTimeDataGridViewTextBoxColumn.Type" xml:space="preserve"><value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
+  <data name="&gt;&gt;lastEditTimeDataGridViewTextBoxColumn.Name" xml:space="preserve"><value>lastEditTimeDataGridViewTextBoxColumn</value></data>
+  <data name="&gt;&gt;cmsSelect.Type" xml:space="preserve"><value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
+  <data name="&gt;&gt;cmsSelect.Name" xml:space="preserve"><value>cmsSelect</value></data>
+  <data name="lastEditorDataGridViewTextBoxColumn.HeaderText" xml:space="preserve"><value>最后修改人</value></data>
+  <data name="&gt;&gt;canPrintDataGridViewCheckBoxColumn.Type" xml:space="preserve"><value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
+  <data name="&gt;&gt;canPrintDataGridViewCheckBoxColumn.Name" xml:space="preserve"><value>canPrintDataGridViewCheckBoxColumn</value></data>
+  <data name="&gt;&gt;colFunctionName.Name" xml:space="preserve"><value>colFunctionName</value></data>
+  <data name="&gt;&gt;colFunctionName.Type" xml:space="preserve"><value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
+  <data name="groupIDDataGridViewTextBoxColumn.HeaderText" xml:space="preserve"><value>组编号</value></data>
+  <data name="&gt;&gt;pnlBase.Name" xml:space="preserve"><value>pnlBase</value></data>
+  <data name="&gt;&gt;pnlBase.Type" xml:space="preserve"><value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
+  <data name="&gt;&gt;functionIDDataGridViewTextBoxColumn.Type" xml:space="preserve"><value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
+  <data name="&gt;&gt;functionIDDataGridViewTextBoxColumn.Name" xml:space="preserve"><value>functionIDDataGridViewTextBoxColumn</value></data>
+  <data name="dgvPermitGroup.TabIndex" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><value>5</value></data>
+  <data name="createTimeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve"><value>创建时间</value></data>
+  <data name="&gt;&gt;groupIDDataGridViewTextBoxColumn.Name" xml:space="preserve"><value>groupIDDataGridViewTextBoxColumn</value></data>
+  <data name="&gt;&gt;groupIDDataGridViewTextBoxColumn.Type" xml:space="preserve"><value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
+  <data name="&gt;&gt;tsmDeselectAll.Name" xml:space="preserve"><value>tsmDeselectAll</value></data>
+  <data name="&gt;&gt;tsmDeselectAll.Type" xml:space="preserve"><value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve"><value>FormPermitGroupManagement</value></data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve"><value>DeXin.EPG.Views.BaseForm.FormToolBase, DeXinEPG2.0, Version=2.0.0.1, Culture=neutral, PublicKeyToken=null</value></data>
+  <data name="canDeleteDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve"><value>删除</value></data>
+  <data name="colFunctionName.HeaderText" xml:space="preserve"><value>功能名称</value></data>
+  <data name="dgvPermitGroup.Size" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBD
+dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0
+ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAgAAAL8CAACUAQAACw==</value></data><data name="dgvPermitGroup.Dock" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAu
+MC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAA
+AB5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Eb2NrU3R5bGUBAAAAB3ZhbHVlX18ACAIAAAAFAAAACw==</value></data><data name="dgvPermitGroup.Location" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBD
+dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0
+ZW0uRHJhd2luZy5Qb2ludAIAAAABeAF5AAAICAIAAAADAAAAEQAAAAs=</value></data><data name="&gt;&gt;canDeleteDataGridViewCheckBoxColumn.Type" xml:space="preserve"><value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
+  <data name="&gt;&gt;canDeleteDataGridViewCheckBoxColumn.Name" xml:space="preserve"><value>canDeleteDataGridViewCheckBoxColumn</value></data>
+  <data name="&gt;&gt;createTimeDataGridViewTextBoxColumn.Name" xml:space="preserve"><value>createTimeDataGridViewTextBoxColumn</value></data>
+  <data name="&gt;&gt;createTimeDataGridViewTextBoxColumn.Type" xml:space="preserve"><value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></data>
+  <data name="$this.AutoScaleDimensions" mimetype="application/x-microsoft.net.object.binary.base64"><value>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBD
+dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABRTeXN0
+ZW0uRHJhd2luZy5TaXplRgIAAAAFd2lkdGgGaGVpZ2h0AAALCwIAAAAAAMBAAABAQQs=</value></data><data name="canQueryDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve"><value>查询</value></data>
+  </root>

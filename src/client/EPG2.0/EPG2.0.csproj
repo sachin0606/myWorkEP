@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>EPG2.0</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net40</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>5</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="resources\acor.jpg" />
+    <EmbeddedResource Include="resources\acor.jpg" LogicalName="resources/acor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EPGBLL">
+      <HintPath>..\..\..\original\EPG2.4\EPGBLL.dll</HintPath>
+    </Reference>
+    <Reference Include="EPGTools">
+      <HintPath>..\..\..\original\EPG2.4\EPGTools.dll</HintPath>
+    </Reference>
+    <Reference Include="EPGModel">
+      <HintPath>..\..\..\original\EPG2.4\EPGModel.dll</HintPath>
+    </Reference>
+    <Reference Include="DXTool">
+      <HintPath>..\..\..\original\EPG2.4\DXTool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="CryptManage">
+      <HintPath>..\..\..\original\EPG2.4\CryptManage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="EPGResource">
+      <HintPath>..\..\..\original\EPG2.4\EPGResource.dll</HintPath>
+    </Reference>
+    <Reference Include="Dexin.Util.Common">
+      <HintPath>..\..\..\original\EPG2.4\Dexin.Util.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="UtilCommon">
+      <HintPath>..\..\..\original\EPG2.4\UtilCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

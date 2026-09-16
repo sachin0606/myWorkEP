@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>EPGServiceManagement</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net40</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>5</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="EPGTools">
+      <HintPath>..\..\..\original\EPG-Service\EPGTools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="EPGServiceBLL">
+      <HintPath>..\..\..\original\EPG-Service\EPGServiceBLL.dll</HintPath>
+    </Reference>
+    <Reference Include="DXTool">
+      <HintPath>..\..\..\original\EPG-Service\DXTool.dll</HintPath>
+    </Reference>
+    <Reference Include="EPGBLL">
+      <HintPath>..\..\..\original\EPG-Service\EPGBLL.dll</HintPath>
+    </Reference>
+    <Reference Include="EPGResource">
+      <HintPath>..\..\..\original\EPG-Service\EPGResource.dll</HintPath>
+    </Reference>
+    <Reference Include="EPGServiceNotify">
+      <HintPath>..\..\..\original\EPG-Service\EPGServiceNotify.exe</HintPath>
+    </Reference>
+    <Reference Include="EPGModel">
+      <HintPath>..\..\..\original\EPG-Service\EPGModel.dll</HintPath>
+    </Reference>
+    <Reference Include="EPGSoftDog">
+      <HintPath>..\..\..\original\EPG-Service\EPGSoftDog.dll</HintPath>
+    </Reference>
+    <Reference Include="TsSenders">
+      <HintPath>..\..\..\original\EPG-Service\TsSenders.exe</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

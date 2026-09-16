@@ -1,0 +1,34 @@
+﻿# Tools
+.tools/
+
+# Compiled / local copies of Dexin runtime in scripts
+scripts/*.dll
+scripts/*.exe
+!scripts/*.exe.config
+scripts/*.htm
+scripts/epg_*.txt
+scripts/ird*
+
+# Working outputs (regenerate via EPG-Ops)
+**/GAPPED_*
+**/REMOTE_WEBHOOK*
+**/STAGED_*
+**/DATA2_UNSCRAMBLE*
+scripts/live_qam_programs.csv
+scripts/SID_EPG_QAM_COMPARE.csv
+scripts/EPG_QAM_Channel_Map.*
+scripts/EPG_TS_NAME_LCN.csv
+scripts/data2_qam_targets.json
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+*.user
+bin/
+obj/
+
+# Vendor binaries (keep decompiled src/)
+original/**/*.dll
+original/**/*.exe
+original/**/*.pdb
+

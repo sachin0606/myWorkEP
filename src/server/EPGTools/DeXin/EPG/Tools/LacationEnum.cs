@@ -1,0 +1,38 @@
+namespace DeXin.EPG.Tools
+{
+	public enum LacationEnum
+	{
+		ForgetPwd,
+		SaveSucceed,
+		SaveFailure,
+		EditSucceed,
+		EditFailure,
+		DeleteSucceed,
+		DeleteFailure,
+		OperateSucceed,
+		OperateFailure,
+		PutInAccount,
+		AccountIsNull,
+		AccountIsNotExist,
+		PasswordIswrong,
+		PutInPassword,
+		LoinInSucceed,
+		UserDisEnabled,
+		tsbQuer,
+		tsbAdd,
+		tsbEdit,
+		tsbDelete,
+		tsbSave,
+		tsbCancel,
+		tsbPrint,
+		tsbHelp,
+		tsbClose,
+		IsNotNull,
+		InputFormatError,
+		ConfirmDelete,
+		ConfirmForbid,
+		ConfirmSubmit,
+		DatabaseConnectionException,
+		SelectOneOrMoreRows
+	}
+}

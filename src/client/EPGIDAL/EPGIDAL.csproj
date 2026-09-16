@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>EPGIDAL</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>5</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="EPGModel">
+      <HintPath>..\..\..\original\EPG2.4\EPGModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="EPGTools">
+      <HintPath>..\..\..\original\EPG2.4\EPGTools.dll</HintPath>
+    </Reference>
+    <Reference Include="DXTool">
+      <HintPath>..\..\..\original\EPG2.4\DXTool.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

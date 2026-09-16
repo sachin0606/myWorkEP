@@ -1,0 +1,18 @@
+using System;
+
+namespace EPGServiceNotify.WinAPI
+{
+	[Flags]
+	public enum DesktopAccessRight : uint
+	{
+		DESKTOP_CREATEMENU = 4u,
+		DESKTOP_CREATEWINDOW = 2u,
+		DESKTOP_ENUMERATE = 0x40u,
+		DESKTOP_HOOKCONTROL = 8u,
+		DESKTOP_JOURNALPLAYBACK = 0x20u,
+		DESKTOP_JOURNALRECORD = 0x10u,
+		DESKTOP_READOBJECTS = 1u,
+		DESKTOP_SWITCHDESKTOP = 0x100u,
+		DESKTOP_WRITEOBJECTS = 0x80u
+	}
+}
