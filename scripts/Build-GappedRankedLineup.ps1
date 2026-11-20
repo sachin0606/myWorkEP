@@ -20,9 +20,12 @@ function Norm([string]$n) {
 # Kannada sub-genres — aligned to main-server 800-series order clusters
 function Get-KannadaSubBlock([string]$name) {
   $n = $name.ToUpperInvariant()
-  if ($n -match 'MOVIE|CINEMA|PICCHAR|DINKI|PUBLIC MOV') { return 'KANNADA_MOVIES' }
-  # News cluster on main: R.KANNADA, News18, Suvarna News, Guarantee, News 1st, Sampoorna, Zee News, Public TV, TV9, Raj News, News Beat/Alert
+  # Main-headend 815 sits in the Kannada GEC run (Chandana 814, NKR 816). Not movies.
+  if ($n -match 'ZEE' -and $n -match 'PICCHAR|PICHURE|PICTURE') { return 'KANNADA_GEC' }
+  if ($n -match 'MOVIE|CINEMA|DINKI|PUBLIC MOV') { return 'KANNADA_MOVIES' }
+  # News cluster on main: R.KANNADA, News18, Suvarna News, Guarantee, News 1st, Sampoorna, Zee News, Public TV, TV9, TV5, Raj News
   if ($n -match '^R\.?\s*KANNADA\b' -or $n -match '\bR KANNADA\b') { return 'KANNADA_NEWS' }
+  if ($n -match 'TV5' -and $n -match 'KANNADA') { return 'KANNADA_NEWS' }
   if ($n -match 'NEWS|TV9|PUBLIC TV|SUVARNA NEWS|NEWS18|NEWS 1ST|SAMPOORNA|GUARANTEE|RAJ NEWS|NEWS BEAT|NEWS ALERT') {
     return 'KANNADA_NEWS'
   }
@@ -42,7 +45,13 @@ function Get-BlockFromRemoteLcn([int]$rlcn, [string]$name) {
   }
   if ($n -match 'REPUBLIC' -and $n -match 'BHARAT') { return 'HINDI_NEWS' }
   if ($n -match 'REPUBLIC' -and $n -match 'KANNADA') { return 'KANNADA_NEWS' }
+  if ($n -match 'TV5' -and $n -match 'KANNADA') { return 'KANNADA_NEWS' }
+  if ($n -match 'ZEE' -and $n -match 'PICCHAR|PICHURE|PICTURE' -and $n -notmatch '\bHD\b') { return 'KANNADA_GEC' }
   if ($n -match 'REPUBLIC\s*TV' -and $n -notmatch 'BHARAT|KANNADA|BANGLA') { return 'ENGLISH_NEWS' }
+  if ($n -match 'EPIC MUSIC|SHOWBOX') { return 'HINDI_MUSIC' }
+  if ($n -match 'EPIC KIDS|GUBBARE') { return 'KIDS' }
+  if ($n -match 'EPIC PARIWAR') { return 'HINDI_GEC' }
+  if ($n -match 'Z\s*SALAM|ZEE SALAAM|ZEE SALAM') { return 'OTHER' }
 
   if ($n -match '\bHD\b' -or $n -match ' HD') {
     if ($n -match 'KANNADA|SUVARNA|UDAYA|PICCHAR|PICHURE') { return 'HD_KANNADA' }
@@ -104,7 +113,14 @@ function Get-BlockByName([string]$name) {
     return 'SPORTS'
   }
   if ($n -match 'REPUBLIC' -and $n -match 'BHARAT') { return 'HINDI_NEWS' }
+  if ($n -match 'REPUBLIC' -and $n -match 'KANNADA') { return 'KANNADA_NEWS' }
+  if ($n -match 'TV5' -and $n -match 'KANNADA') { return 'KANNADA_NEWS' }
+  if ($n -match 'ZEE' -and $n -match 'PICCHAR|PICHURE|PICTURE' -and $n -notmatch '\bHD\b') { return 'KANNADA_GEC' }
   if ($n -match 'REPUBLIC\s*TV' -and $n -notmatch 'BHARAT|KANNADA') { return 'ENGLISH_NEWS' }
+  if ($n -match 'EPIC MUSIC|SHOWBOX') { return 'HINDI_MUSIC' }
+  if ($n -match 'EPIC KIDS|GUBBARE') { return 'KIDS' }
+  if ($n -match 'EPIC PARIWAR') { return 'HINDI_GEC' }
+  if ($n -match 'Z\s*SALAM|ZEE SALAAM|ZEE SALAM') { return 'OTHER' }
   if ($n -match '^DD\b' -or $n -match '\bDD\b' -or $n -match 'SANSAD') { return 'DD_REGIONAL' }
   if ($n -match '\bHD\b' -or $n -match ' HD') {
     if ($n -match 'KANNADA|SUVARNA|UDAYA|PICCHAR|PICHURE') { return 'HD_KANNADA' }
@@ -122,7 +138,7 @@ function Get-BlockByName([string]$name) {
   }
   if ($n -match 'TIMES NOW NAV|NAVABHARAT') { return 'HINDI_NEWS' }
   if ($n -match 'STAR MOVIES|SONY PIX|ROMEDY|MOVIES NOW|MNX|HBO') { return 'ENGLISH_MOVIES' }
-  if ($n -match 'NICK|POGO|CARTOON|DISNEY|HUNGAMA|SONIC|CHINTO|CHINTU|SONY YAY') { return 'KIDS' }
+  if ($n -match 'NICK|POGO|CARTOON|DISNEY|HUNGAMA|SONIC|CHINTO|CHINTU|SONY YAY|EPIC KIDS|GUBBARE') { return 'KIDS' }
   if ($n -match 'DISCOVERY|ANIMAL|TLC|NGC|NATIONAL GEO|BBC EARTH|HISTORY|TURBO|SCIENCE|FOOD FOOD|EPIC TV') {
     return 'INFOTAINMENT'
   }
@@ -139,7 +155,7 @@ function Get-BlockByName([string]$name) {
   if ($n -match 'CINEMA|MAX\b|STAR GOLD|&PICTURES|ZEE BOLLYWOOD|ZEE ACTION|CINEPLEX|GOLDMINES|KADAK|MANORANJAN|B4U|BHOJPURI|DABANGG|PITAARA|FILMY|SHOWBOX') {
     return 'HINDI_MOVIES'
   }
-  if ($n -match '9XM|MTV|MUSIC INDIA|9X JALWA|ZING|ZOOM|TASHAN|PUNJABI|INSYNC|E 24|7S MUSIC') { return 'HINDI_MUSIC' }
+  if ($n -match '9XM|MTV|MUSIC INDIA|9X JALWA|ZING|ZOOM|TASHAN|PUNJABI|INSYNC|E 24|7S MUSIC|EPIC MUSIC') { return 'HINDI_MUSIC' }
   if ($n -match 'COLORS|ZEE TV|SONY|STAR PLUS|STAR BHARAT|AND TV|UTSAV|ANMOL|SAB\b|PAL\b|RISHTEY') { return 'HINDI_GEC' }
   return 'OTHER'
 }
@@ -164,6 +180,12 @@ foreach ($rc in $remote) {
 function Find-RemoteKey([string]$localNorm) {
   if (-not $localNorm) { return $null }
   if ($rankByName.ContainsKey($localNorm)) { return $localNorm }
+  # Local "Sirikannada TV" vs main "SIRIKANNADA ALL TIME"
+  if ($localNorm -match 'SIRIKANNADA') {
+    foreach ($k in $rankByName.Keys) {
+      if ($k -match 'SIRIKANNADA') { return $k }
+    }
+  }
   # Strict prefix only when both sides look like the same channel (min 10 chars)
   $best = $null; $bestRank = 999999
   foreach ($k in $rankByName.Keys) {
@@ -247,7 +269,10 @@ foreach ($sid in $nameMap.Keys) {
     $block = Get-BlockByName $nm
     $matchStats.name_only++
   }  if ($rk -ge 900000) { $rk = 900000 + $sid }
-  $prev = if ($prevLcn.ContainsKey($sid)) { [int]$prevLcn[$sid] } else { 0 }
+  # Keep LIVE series (current NIT). Backup is only fallback for SIDs with no live LCN.
+  $prev = if ($curLcn.ContainsKey($sid)) { [int]$curLcn[$sid] }
+          elseif ($prevLcn.ContainsKey($sid)) { [int]$prevLcn[$sid] }
+          else { 0 }
   $rows.Add([PSCustomObject]@{
     service_id = $sid
     channel_name = $nm
@@ -265,13 +290,36 @@ foreach ($sid in $nameMap.Keys) {
 Write-Host ("Remote genre map: exact={0} fuzzy={1} name_fallback={2}" -f $matchStats.exact, $matchStats.fuzzy, $matchStats.name_only)
 
 function Get-SeriesStart([int[]]$prevVals) {
-  # Ignore illegal 4-digit LCNs; use cluster around median so outliers (e.g. HD at 451) don't pull series
+  # Ignore illegal 4-digit LCNs. Split packed clusters (gap > 8 = new cluster)
+  # so a misplaced channel (TV5 news sitting at GEC 10) cannot pull the series start.
   $vals = @($prevVals | Where-Object { $_ -ge 1 -and $_ -le 999 } | Sort-Object)
   if ($vals.Count -eq 0) { return 900 }
+  $groups = New-Object System.Collections.Generic.List[object]
+  $cur = New-Object System.Collections.Generic.List[int]
+  foreach ($v in $vals) {
+    if ($cur.Count -gt 0 -and (($v - $cur[$cur.Count - 1]) -gt 8)) {
+      $groups.Add(@($cur.ToArray()))
+      $cur = New-Object System.Collections.Generic.List[int]
+    }
+    $cur.Add($v)
+  }
+  $groups.Add(@($cur.ToArray()))
   $med = [int]$vals[[Math]::Floor(($vals.Count - 1) / 2)]
-  $cluster = @($vals | Where-Object { $_ -ge ($med - 100) -and $_ -le ($med + 100) })
-  if ($cluster.Count -eq 0) { $cluster = $vals }
-  return [int]($cluster | Measure-Object -Minimum).Minimum
+  $best = $null
+  $bestCount = -1
+  $bestDist = 999999
+  foreach ($g in $groups) {
+    $arr = @($g)
+    $cnt = $arr.Count
+    $avg = ($arr | Measure-Object -Average).Average
+    $dist = [Math]::Abs($avg - $med)
+    if ($cnt -gt $bestCount -or ($cnt -eq $bestCount -and $dist -lt $bestDist)) {
+      $best = $arr
+      $bestCount = $cnt
+      $bestDist = $dist
+    }
+  }
+  return [int]($best | Measure-Object -Minimum).Minimum
 }
 
 # Genre order = previous series order (robust cluster start, not raw min)
@@ -314,7 +362,7 @@ foreach ($bName in $blockOrder) {
       match_how = $c.match_how
       previous_lcn = $c.previous_lcn
       current_lcn = $c.current_lcn
-      lcn_change = if ($c.previous_lcn -gt 0 -and $c.previous_lcn -ne $lcn) { 'YES' } else { 'NO' }
+      lcn_change = if ($c.current_lcn -gt 0 -and $c.current_lcn -ne $lcn) { 'YES' } else { 'NO' }
       service_id = $c.service_id
       channel_name = $c.channel_name
       ts_name = $c.ts_name

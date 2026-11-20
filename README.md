@@ -1,5 +1,7 @@
 # EPG System source (decompiled)
 
+**How to operate this plant’s EPG, apply LCN/bouquet changes, and sync the repo to another PC:** see [`docs/EPG-COMPLETE-GUIDE.md`](docs/EPG-COMPLETE-GUIDE.md).
+
 Writable working copy of the installed Dexin EPG product so later changes can be made in C# and rebuilt. Do **not** edit the live files under `C:\Program Files (x86)\EPG System`.
 
 | Installed app | Role | Binary | Decompiled project |

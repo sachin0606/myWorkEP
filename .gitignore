@@ -20,6 +20,9 @@ scripts/EPG_QAM_Channel_Map.*
 scripts/EPG_TS_NAME_LCN.csv
 scripts/data2_qam_targets.json
 
+# One-off local audit scripts
+scripts/_tmp_*
+
 # OS / IDE
 .DS_Store
 Thumbs.db

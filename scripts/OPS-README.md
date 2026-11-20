@@ -1,5 +1,7 @@
 # EPG / QAM Ops — no AI required
 
+**Full plant guide (architecture, LCN rules, cloud sync):** [`../docs/EPG-COMPLETE-GUIDE.md`](../docs/EPG-COMPLETE-GUIDE.md)
+
 This folder’s **rules engine** already “thinks” for LCN genre + ranking. You only run the menu.
 
 ## Why AI is not needed

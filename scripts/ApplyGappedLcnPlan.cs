@@ -92,9 +92,18 @@ internal static class ApplyGappedLcnPlan
 				TsInfo ts;
 				if (!tsByTable.TryGetValue(tid, out ts))
 					throw new Exception("TS table missing: " + tid);
-				// Never touch the physical 546 remux.
-				if (string.Equals(ts.TsName, "TS_546", StringComparison.OrdinalIgnoreCase))
-					throw new Exception("REFUSE 546 remux: " + ts.TsName);
+				// Never touch the physical 546 remux (TS_546 / TS_570 / ts_id 22).
+				if (ts.TsId == 22
+					|| string.Equals(ts.TsName, "TS_546", StringComparison.OrdinalIgnoreCase)
+					|| string.Equals(ts.TsName, "TS_570", StringComparison.OrdinalIgnoreCase))
+				{
+					foreach (var w in grp)
+					{
+						report.Add(string.Format("{0},{1},{2},\"{3}\",{4},{5},{6},SKIP_546_REMUX",
+							ts.TsName, ts.TsId, w.ServiceId, Esc(w.ChannelName), w.Block, w.CurrentLcn, w.ProposedLcn));
+					}
+					continue;
+				}
 
 				var live = prgMgr.GetByTSIdentity(ts.Identity).ToList();
 				var lcnMap = ReadLcnMap(desMgr, ts.Identity);
