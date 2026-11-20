@@ -234,70 +234,67 @@ Compare EPG NIT frequencies to live QAM dumps (`scripts\live_qam_programs.csv` /
 **Cloning the repo on another PC does not clone the live channel list.**  
 To work on-air you still need access to an EPG PC with `EPG2` + Dexin service, or a restored DB backup.
 
-### 10.2 Recommended: GitHub (works from this Windows PC)
+### 10.2 Cursor Cloud repo (this project)
 
-Cursor’s private “Origin” hosting currently needs **Mac / Linux / WSL**. This machine is native Windows without WSL, so **GitHub (or Azure DevOps / GitLab)** is the practical cloud copy.
+| Item | Value |
+|------|--------|
+| Cloud page | https://cursor.com/codebase/sachin-t/epg-system |
+| Clone URL | `https://origin.cursor.com/sachin-t/epg-system.git` |
+| Visibility | **Private** |
+| Local remote | `origin` → that URL |
 
-One-time setup on the EPG PC:
+Local commits for the ops guide + LCN/bouquet scripts are already on `main`.
+
+**Finish the first push from this Windows PC** (git needs your Cursor login once):
+
+1. In Cursor: **Source Control** → **Push** / **Publish Branch**, **or** in a terminal:
 
 ```powershell
 cd C:\Users\alsha\source\EPG-System
-
-# 1) Create a PRIVATE repo on github.com (empty, no README)
-
-# 2) Point this project at it (only if no remote yet)
-git remote add origin https://github.com/<your-user>/EPG-System.git
-
-# 3) Commit current work (ask Cursor: "commit all EPG script changes")
-git add docs scripts README.md
-git status
-git commit -m "Document EPG ops and sync Telugu/LCN/bouquet tooling."
-
-# 4) Push
-git branch -M main
 git push -u origin main
 ```
 
-On another PC:
+2. Complete the browser / credential prompt when Windows asks for `origin.cursor.com`.
+3. On the **other Cursor IDE**: open https://cursor.com/codebase/sachin-t/epg-system → Clone / Open, signed in as the same Cursor account (`sachin-t`).
 
-```powershell
-git clone https://github.com/<your-user>/EPG-System.git
-cd EPG-System
+If push keeps hanging on Windows, install **WSL + Ubuntu**, then:
+
+```bash
+curl -fsSL https://downloads.cursor.com/origin/install.sh | sh
+~/.local/bin/origin auth login
+cd /mnt/c/Users/alsha/source/EPG-System
+git push -u origin main
 ```
 
-Sign in with the same GitHub account (or a collaborator invite). Repo should stay **private**.
-
-### 10.3 Optional: Cursor Origin (private Cursor cloud)
-
-Only after installing **WSL** (or using a Mac/Linux machine):
-
-1. Install Origin CLI and sign in (`origin` skill / Cursor docs).
-2. `origin repo create epg-system`
-3. `git remote add origin <url>` + `git push -u origin main`
-4. Open from another Cursor via that codebase URL.
-
-### 10.4 Optional: Cursor Cloud Agents
-
-Cloud agents see whatever is in the **git remote**.  
-Push often so cloud / other machines see the latest scripts. They **cannot** talk to your plant `localhost` SQL or QAM unless you expose tooling deliberately (do not expose EPG DB to the internet).
-
-### 10.5 Taking a USB / offline copy
-
-If no cloud yet:
+### 10.3 Later updates (either PC)
 
 ```powershell
-# Zip the source repo (exclude huge junk if needed)
+cd C:\Users\alsha\source\EPG-System
+git add -A
+git status
+git commit -m "Describe the change."
+git push
+```
+
+On the other machine: `git pull`.
+
+### 10.4 Cursor Cloud Agents
+
+Cloud agents see whatever is **pushed** to the Origin remote.  
+They **cannot** talk to plant `localhost` SQL or QAM (do not expose EPG DB to the internet).
+
+### 10.5 USB / DB backup (plant only)
+
+```powershell
 Compress-Archive -Path C:\Users\alsha\source\EPG-System\* `
   -DestinationPath D:\Backup\EPG-System-$(Get-Date -Format yyyyMMdd).zip
 ```
-
-Also export DB when you need a full plant snapshot:
 
 ```bat
 sqlcmd -S localhost -E -Q "BACKUP DATABASE EPG2 TO DISK='D:\Backup\EPG2.bak' WITH INIT"
 ```
 
-Keep backups offline / encrypted — they contain your full channel map.
+Keep backups offline — they contain the full channel map.
 
 ---
 
