@@ -234,37 +234,23 @@ Compare EPG NIT frequencies to live QAM dumps (`scripts\live_qam_programs.csv` /
 **Cloning the repo on another PC does not clone the live channel list.**  
 To work on-air you still need access to an EPG PC with `EPG2` + Dexin service, or a restored DB backup.
 
-### 10.2 Cursor Cloud repo (this project)
+### 10.2 GitHub remote (this project)
 
 | Item | Value |
 |------|--------|
-| Cloud page | https://cursor.com/codebase/sachin-t/epg-system |
-| Clone URL | `https://origin.cursor.com/sachin-t/epg-system.git` |
-| Visibility | **Private** |
+| GitHub | https://github.com/sachin0606/myWorkEP |
+| Clone URL | `https://github.com/sachin0606/myWorkEP.git` |
 | Local remote | `origin` → that URL |
+| Branch | `main` (pushed) |
 
-Local commits for the ops guide + LCN/bouquet scripts are already on `main`.
-
-**Finish the first push from this Windows PC** (git needs your Cursor login once):
-
-1. In Cursor: **Source Control** → **Push** / **Publish Branch**, **or** in a terminal:
+**On another Cursor IDE / PC:**
 
 ```powershell
-cd C:\Users\alsha\source\EPG-System
-git push -u origin main
+git clone https://github.com/sachin0606/myWorkEP.git
+cd myWorkEP
 ```
 
-2. Complete the browser / credential prompt when Windows asks for `origin.cursor.com`.
-3. On the **other Cursor IDE**: open https://cursor.com/codebase/sachin-t/epg-system → Clone / Open, signed in as the same Cursor account (`sachin-t`).
-
-If push keeps hanging on Windows, install **WSL + Ubuntu**, then:
-
-```bash
-curl -fsSL https://downloads.cursor.com/origin/install.sh | sh
-~/.local/bin/origin auth login
-cd /mnt/c/Users/alsha/source/EPG-System
-git push -u origin main
-```
+Or: Cursor → Clone Repo → paste that URL (sign in to GitHub with the `sachin0606` account).
 
 ### 10.3 Later updates (either PC)
 
@@ -278,9 +264,9 @@ git push
 
 On the other machine: `git pull`.
 
-### 10.4 Cursor Cloud Agents
+### 10.4 Cloud agents / other machines
 
-Cloud agents see whatever is **pushed** to the Origin remote.  
+Agents and other PCs see whatever is **pushed** to GitHub.  
 They **cannot** talk to plant `localhost` SQL or QAM (do not expose EPG DB to the internet).
 
 ### 10.5 USB / DB backup (plant only)
